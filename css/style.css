@@ -1,0 +1,17 @@
+/* sitewide links */
+ /* selected link */
+ a:active {
+    color: #F20544;
+   }
+a:link {
+    color: #F20544;
+   }
+  a:visited {
+    color: #f2791d;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #ffe600;
+  }
+  
+ 
