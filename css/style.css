@@ -1,17 +1,37 @@
 /* sitewide links */
- /* selected link */
- a:active {
+/* selected link */
+a:active {
     color: #F20544;
-   }
+}
+
 a:link {
     color: #F20544;
-   }
-  a:visited {
+}
+
+a:visited {
     color: #f2791d;
-  }
-  /* mouse over link */
-  a:hover {
+}
+
+/* mouse over link */
+a:hover {
     color: #ffe600;
-  }
-  
- 
+}
+
+.card1 {
+    align-items: center;
+    background-color: #23272F;
+    color: #F8F9FC;
+    text-align: center;
+    align-content: center;
+}
+
+.card2 {
+    align-items: center;
+    background-color: #3F444D;
+    color: #F8F9FC;
+
+}
+
+body {
+    background-color: #1B1F27;
+}
