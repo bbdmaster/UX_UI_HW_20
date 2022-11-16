@@ -23,6 +23,9 @@
           <a class="nav-link" href="#">Porfolio</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#">Slideshow</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resume</a>
         </li>
       </ul>
@@ -40,45 +43,141 @@
 
   <!-- Bootstrap 4 Card component  Research-->
 <section class="card1">
-  <div class="col-sm-3">
-    <img src="..." class="card-img-top" alt="...">
+  <div class="col-med-3">
+    <img src="/imgs/FBD_saen_IMG_01391.jpg" class="card-img-top projectPic" alt="SAEN">
     <div class="card-body">
-      <h5 class="card-title">Refresh Travel App</h5>
-      <p class="card-text">This was a basically a solo project. But the research was completed in pairs.</p>
+      <h2 class="card-title">Refresh Travel App</h2>
+      <!--Start Accordion-->
+          <div class="myworkDesc">
+        <h5>I believe that my ideas can contribute to a better consumer experience</H5>
+      </div>
+      <button class="accordion">Team Info</button>
+      <div class="panel">
+        <p>Keeping up with the latest tech can bog down your productivity with you company, let me take the mantle keep you
+          updated with upcoming trends.</p>
+      </div>
+    
+      <button class="accordion">Problem Statement & Solution</button>
+      <div class="panel">
+        <p>After Conduction 9 Interview</p>
+      </div>
+    
+      <button class="accordion">Iteration & Prototyping</button>
+      <div class="panel">
+        <p>Let me create a path to success for your visitors. I can determine lagging results and missed opportunities with
+          your products or service.</p>
+      </div>
+    
       <a href="#" class="btn btn-lg btn-dark">View Case Study</a>
     </div>
   </div>
 </section>
 <section class="card2">
     <div class="col-med-3">
-      <img src="/imgs/svgs/MobileApp_OSU_CaseStudy_2022_L_Blackwood_Final-3.svg" class="card-img-top" alt="Refresh Travel App">
+      <img src="/imgs/svgs/MobileApp_OSU_CaseStudy_2022_L_Blackwood_Final-3.svg" class="card-img-top projectPic" alt="Refresh Travel App">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!--Start Accordion-->
+        <div class="myworkDesc">
+          <h5>I believe that my ideas can contribute to a better consumer experience</H5>
+        </div>
+        <button class="accordion">Team Info</button>
+        <div class="panel">
+          <p>Keeping up with the latest tech can bog down your productivity with you company, let me take the mantle keep you
+            updated with upcoming trends.</p>
+        </div>
+      
+        <button class="accordion">Problem Statement & Solution</button>
+        <div class="panel">
+          <p>After Conduction 9 Interview</p>
+        </div>
+      
+        <button class="accordion">Iteration & Prototyping</button>
+        <div class="panel">
+          <p>Let me create a path to success for your visitors. I can determine lagging results and missed opportunities with
+            your products or service.</p>
+        </div>
         <a href="#" class="btn btn-lg btn-dark">View Case Study</a>
       </div>
     </div>
   </section>
   <section class="card1">
-    <div class="col-sm-3">
-      <img src="..." class="card-img-top" alt="...">
+    <div class="col-med-3">
+      <img src="..." class="card-img-top projectPic" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!--Start Accordion-->
+      <div class="myworkDesc">
+        <h5>I believe that my ideas can contribute to a better consumer experience</H5>
+      </div>
+      <button class="accordion">Team Info</button>
+      <div class="panel">
+        <p>Keeping up with the latest tech can bog down your productivity with you company, let me take the mantle keep you
+          updated with upcoming trends.</p>
+      </div>
+    
+      <button class="accordion">Problem Statement & Solution</button>
+      <div class="panel">
+        <p>After Conduction 9 Interview</p>
+      </div>
+    
+      <button class="accordion">Iteration & Prototyping</button>
+      <div class="panel">
+        <p>Let me create a path to success for your visitors. I can determine lagging results and missed opportunities with
+          your products or service.</p>
+      </div>
         <a href="#" class="btn btn-lg btn-dark">View Case Study</a>
       </div>
     </div>
   </section>
   <section class="card2">
-    <div class="col-sm-3">
-      <img src="..." class="card-img-top" alt="...">
+    <div class="col-med-3">
+      <img src="..." class="card-img-top projectPic" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!--Start Accordion-->
+      <div class="myworkDesc">
+        <h5>I believe that my ideas can contribute to a better consumer experience</H5>
+      </div>
+      <button class="accordion">Team Info</button>
+      <div class="panel">
+        <p>Keeping up with the latest tech can bog down your productivity with you company, let me take the mantle keep you
+          updated with upcoming trends.</p>
+      </div>
+    
+      <button class="accordion">Problem Statement & Solution</button>
+      <div class="panel">
+        <p>After Conduction 9 Interview</p>
+      </div>
+    
+      <button class="accordion">Iteration & Prototyping</button>
+      <div class="panel">
+        <p>Let me create a path to success for your visitors. I can determine lagging results and missed opportunities with
+          your products or service.</p>
+      </div>
         <a href="#" class="btn btn-lg btn-dark">View Case Study</a>
       </div>
     </div>
   </section>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 
 
 </body>
